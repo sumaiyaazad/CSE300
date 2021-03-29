@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper]{article}
+% letterpaper as paper type
+% 1 inch margin on top,bottom,right,left
+\usepackage{fullpage}
+\usepackage{float}
+% \usepackage[margin=1in]{geometry}
+\usepackage[top=1in,bottom=1in,left=0.5in,right=0.5in,paperwidth=8.5in,paperheight=11in]{geometry}
+\usepackage{amsfonts,amssymb,amsmath}
+\usepackage{graphicx}
+\def\eq1{y=\dfrac{x}{3x^2+x+1}}
+\newcommand{\set}[1]{\setlength\itemsep{#1em}}
+\begin{document}
+
+This is my document.
+
+\includegraphics[width=3.5in]{deepulook}
+\begin{center}
+\includegraphics[scale=0.2,width=0.25\textwidth]{deepulook}
+\end{center}
+\begin{figure}
+\includegraphics[scale=0.2,width=0.25\textwidth]{deepulook}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[scale=0.2,width=0.25\textwidth]{deepulook}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.2,width=0.25\textwidth]{deepulook}
+\caption{The theorem}
+\end{figure}
+\begin{figure}[b]
+\includegraphics[scale=0.2,width=0.25\textwidth]{deepulook}
+\end{figure}
+\begin{figure}[t]
+\includegraphics[scale=0.2,width=0.25\textwidth]{deepulook}
+\end{figure}
+\begin{enumerate}
+\set{1.2}
+    \item lets examine the function $\eq1$.
+    \item This is the symbol for all real numbers: $\mathbb{R}$
+    \item This is the symbol for all integers: $\mathbb{Z}$
+    \item This is the symbol for all rationals: $\mathbb{Q}$
+\end{enumerate}
+\end{document}
