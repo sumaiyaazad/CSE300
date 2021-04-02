@@ -1,0 +1,55 @@
+\documentclass[14pt, a4paper]{article}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{float}
+\setlength{\parindent}{2em}
+\begin{document}
+	\section{List}
+	This is a section containing a sample list.Try to reproduce it.
+	\begin{enumerate}
+    \item \textsc{First item} 
+    \item second item
+    \begin{itemize}
+        \item nested one
+        \item[] special one
+        \begin{itemize}
+            \item \textit{another level}
+            \item \textbf{Ok} enough
+        \end{itemize}
+    \end{itemize}
+    \item another
+    \begin{enumerate}
+        \item \textbf{what is happening}
+        \item[] I am here
+        \item[] \textbf{CSE} Computer science and engineering
+        \item[] \textbf{ME} Mechanical Engineering
+    \end{enumerate}
+    Here is some filler texts. hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii husisdjdjdid9oide.hiouerewruiowf cghiuywoeriwfoif.
+    \end{enumerate}
+    \section{Fonts}
+    \subsection{Normal fonts}
+    These are some normal texts.
+    \subsubsection{Color}
+    \textcolor{blue}{This is a sample text in blue.blue blue green green yellow red red. Here is some filler texts. hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii husisdjdjdid9oide.hiouerewruiowf cghiuywoeriwfoif.}\par
+    \textcolor{red}{This is a sample text in blue.blue blue green green yellow red red. Here is some filler texts. hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii husisdjdjdid9oide.hiouerewruiowf cghiuywoeriwfoif.}\par
+    This is a sample text in blue.blue blue green green yellow red red. Here is some filler texts. hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii husisdjdjdid9oide.hiouerewruiowf cghiuywoeriwfoif.
+    \pagebreak
+    \section*{Tables}
+    Table 1 is very hard.
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+       \hline
+       left  & 2 & 3 & 4 & 5 \\
+       \hline
+       \multicolumn{2}{c}{This is } & \multicolumn{3}{c}{Tough}\\
+       \cline{3-5}
+       \multicolumn{2}{c}{difficult } & I & \multicolumn{2}{c|}{What}\\
+       \cline{1-3}
+       \multicolumn{3}{|c|}{Here I am } & \multicolumn{2}{c|}{is} \\
+        \hline
+    \end{tabular}
+    \caption{ Hardest Table!}
+    \end{table}
+\end{document}

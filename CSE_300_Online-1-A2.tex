@@ -1,0 +1,68 @@
+\documentclass[14pt]{article}
+\title{CSE 300 Online 1}
+\author{1705048}
+\date{\today}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{multirow}
+\begin{document}
+\maketitle
+\tableofcontents
+\pagebreak
+\section{Introduction}
+This is first online practice on \LaTeX\ .\\
+We will do some styling in section 2.
+\section{Styling}
+    This is \textbf{\textcolor{red}{bold}}. This is \textit{italic} \& so on.
+\section*{Use of Special Characters}
+You can use special characters by preceding with \. Another package can be used named as verbatim. Example:\~{}$!$\$\#$\backslash$$@$$*$\^{}
+\section{List}
+There are 3 kinds of list.
+\begin{enumerate}[i]
+    \item Unordered
+    \item Ordered
+    \item Description
+\end{enumerate}
+\pagebreak
+Let’s see an example of lists:
+\begin{description}
+    \item[CSE 311] Data Communication 1
+    \begin{itemize}
+        \item Fourier
+        \item[] ADC
+    \end{itemize}
+    \item[CSE 305] Computer Architecture
+    \begin{enumerate}
+        \item MIPS
+        \begin{enumerate}
+        \item commands
+        \item pipeline
+        \end{enumerate}
+        \item Shared Memory
+    \end{enumerate}
+    \item[CSE 309] Compiler
+\end{description}
+\section{Table}
+For understanding the use of multi-row and multi-column command see the
+table 1
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+       \hline
+       \multirow{2}{*}{Dollar}  & Rupee & taka & Euro \\
+	  \cline{2-4}
+       & \multicolumn{2}{|c|}{\multirow{3}{*}{Dhaka}} & DU\\
+	  \cline{4-4}
+	  City & \multicolumn{2}{|c}{} & BUET\\
+	  \cline{1-1}
+	  \cline{4-4}
+       Food & \multicolumn{2}{|c|}{} & MOSQUE\\
+      \hline
+    \end{tabular}
+    \caption{  A table for online test}
+\end{table}
+\end{document}

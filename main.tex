@@ -1,0 +1,66 @@
+\documentclass[14pt]{article}
+\title{CSE 300 Online 1}
+\author{1705048}
+\date{\today}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{amsmath,mathtools,amssymb,amsfonts}
+\usepackage{physics}
+\usepackage{biblatex}
+\addbibresource{ref.bib}
+\newcommand{\comb}[2]{{}_{#1}\mathrm{C}_{#2}}
+\newcommand*{\MyComb}[2]{{}^{#1}C_{#2}}%
+\begin{document}
+\maketitle
+\tableofcontents
+\pagebreak
+\section{Introduction}
+\textbf{Google Scholar} is a wonderful search engine for finding research articles \cite{dirac}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5cm,height=0.5cm,scale=0.4]{gs_icon.png}
+	\includegraphics[width=3cm,height=0.5cm,scale=0.4]{gs_page.png}
+	
+	(a) Icon   (b) Banner
+	
+	\includegraphics[width=4cm,height=4cm,scale=0.4]{plag.jpg}
+	\label{fig:1}
+	\caption{Guidance towards research}
+\end{figure}
+\section{Equations}
+Euler’s formula is one of the most important equations in mathematics. It establishes a relationship between trigonometric function and complex exponential function. The equation is as follows.
+\begin{equation}
+e^{i\theta}=\cos\theta + i\sin\theta
+\end{equation}\par
+If we put $\theta$ = $\frac{\pi}{2}$ in equation 1, we get the following:
+$$\begin{aligned}
+e^{i{\frac{\pi}{2}}}&=\cos\frac{\pi}{2}+i\sin\frac{\pi}{2} \\
+&=0+i.1 \\
+&=i
+\end{aligned}$$\par
+If we put $\theta$ = $\pi$, we get $e^{i\pi}+1 = 0$ which is termed as \textit{Euler’s Identity} \cite{einstein}.
+\subsection{Equation Examples}
+\begin{equation}
+\MyComb{n}{r} = \binom{n}{r} = \frac{n!}{r!(n-r)!} 
+\end{equation}
+\pagebreak
+% $$\left(\frac{a}{b}\right)$$
+$$
+\begin{array}{cc}
+  F_c(x,y)= & 
+    \begin{cases}
+     \pdv[2]{x^{3}y^{x}}{x}+ \pdv[2]{\Gamma(x)\log(\tan y)}{x}{y} & \text{if x,y are real numbers} \\
+      \lim_{z \to e^{x^{2y}}} \sqrt{z+\frac{1}{\sqrt{z+\frac{1}{\sqrt{z+...}}}}}  & \text{otherwise}
+    \end{cases}
+\end{array}
+$$
+% $$F_c(x,y)=\left\{hi\right.$$
+\section*{References}
+\printbibliography
+\end{document}
